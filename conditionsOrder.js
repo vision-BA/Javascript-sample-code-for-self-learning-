@@ -1,0 +1,16 @@
+//treating functions in ordered manner
+function orderedManner(val){
+   if (val>50){
+        console.log("greater than fifty 50");
+    }
+    else if (val>10){
+        console.log("greater than ten 10");
+    }
+   
+    else{
+        console.log("it is less than 10 and 50 in advance");
+    }
+}
+orderedManner(8);
+orderedManner(24);
+orderedManner(90);  
