@@ -14,3 +14,5 @@ function orderedManner(val){
 orderedManner(8);
 orderedManner(24);
 orderedManner(90);  
+
+/* in this function thbe concept is that order of execution matter on the arragement to condition's*/
