@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h4> function to handle errror</h4>
+    <input type="text" id="dataEntry">
+    <button type="button" onclick="myFunction()">submit</button>
+  <p id="info"></p>
+  <script>
+  function myFunction(){
+    var inputData=document.getElementById("dataEntry").value;
+    var errorText=document.getElementById("info");
+    errorText.innerHTML="";
+    try{
+      if(inputData=="") throw "cant be empty";
+      inputData=Number(inputData);
+      if(inputData>10) throw "it is too large";
+    }
+      catch(err){
+        errorText.innerHTML="input data  " +err;
+      }
+      finally{
+        document.getElementById("dataEntry").value=0;
+      }
+    
+  }
+  </script>
+  </body>
+</html>
