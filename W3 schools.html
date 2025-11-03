@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  *{
+    border-box:box-sizing;
+    margin: 0;
+  }
+    body{
+      background-color: green;
+      color: white;
+    }
+    nav{
+      background-color: purple;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+    nav ul li{
+      list-style-type:none;
+      padding: 12px;
+       }
+    nav ul li a{
+      text-decoration: none;
+      color: white;
+        }
+        #bar{
+          float: right;
+          margin: 12px;
+        }
+  </style>
+<body>
+<h4>This is hidden bar in navigation</h4>  
+<button id="bar" onclick="myFunction()">🌅</button>
+<nav id="nav">
+<ul>
+<li><a href="#">home</a></li>
+<li><a href="#">services</a></li>
+<li><a href="#">contacts</a></li>
+<li><a href="#">events</a></li>
+<li><a href="#">About</a></li>
+</ul>
+</nav>
+  <script>
+    function myFunction(){
+      document.getElementById('nav').style.display="block";
+    }
+    
+  </script>
+</body>
+<html>
