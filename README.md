@@ -6,6 +6,7 @@ The purpose is to practice basic concepts and improve my coding skills.
 ---
 
 ## 📂 Project Contents
+
 - Different small programs written in JavaScript
 - Examples of concepts like:
   - Variables & Data Types
