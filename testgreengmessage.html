@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="greeting"></p>
+    <script>
+        "use strict";
+function showGreeting() {
+  const hour = new Date().getHours();
+  if (hour >= 5 && hour < 12) {
+    return 'Good Morning,';
+  } 
+  else if (hour >= 12 && hour < 18) {
+     return 'Good Afternoon,';
+  }
+   else if (hour >= 18 && hour < 22) {
+    return 'Good Evening,';
+  }
+   else {
+   return 'Good Night,';
+  }
+}
+document.getElementById('greeting').innerHTML=showGreeting() + " welcome to our hotel,Enjoy your special occassion here";
+    </script>
+</body>
+</html>
