@@ -4,7 +4,7 @@ function orderedManner(val){
         console.log("greater than fifty 50");
     }
     else if (val>10){
-        console.log("greater than ten 10");
+        console.log("greater than ten 10"); // the first satisified condition will affect the flow of code
     }
    
     else{

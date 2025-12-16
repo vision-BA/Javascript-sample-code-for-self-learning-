@@ -14,3 +14,6 @@ function trueOrFalse(wasThatTrue){
 }
 console.log(boolean1(false ));
 console.log(trueOrFalse(false));
+// the output will be;
+//no it is false
+//that was not true
