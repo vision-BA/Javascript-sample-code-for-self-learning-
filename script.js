@@ -1,14 +1,18 @@
 // drawing a gradient filled rectangle inside the canva from html  
-var canvas=document.getElementById("myCanvas");
-var ctx=canvas.getContext("2d");
-var grd=ctx.createLinearGradient(2,2,180,300);
-grd.addColorStop(0,"green");
-grd.addColorStop(1,"orange");
-ctx.fillStyle=grd; 
-ctx.fillRect(15,2,180,300);
-ctx.moveTo(0,0);
-ctx.lineTo(180,300);
-ctx.stroke();
+var canvas=document.getElementById("myCanvas"); // element accesssed in form of object
+var ctx=canvas.getContext("2d"); // acceseding the context of the canvas in 2d form
+var grd=ctx.createLinearGradient(2,2,180,300); // creating linear gradient
+grd.addColorStop(0,"green");// starting color
+grd.addColorStop(1,"orange"); // ending color
+ctx.fillStyle=grd; // filling the style with gradient
+ctx.fillRect(15,2,180,300); // drawing rectangle inside the canvas
+// drawing a line inside the canva tag from html
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+ctx.beginPath();
+ctx.moveTo(0,0); // beginning point
+ctx.lineTo(180,300); // ending point
+ctx.stroke(); 
 //drawing a circle inside the canva tag from html
 var canvas1=document.getElementById('myCanvas1');
 var ctx=canvas1.getContext('2d');
