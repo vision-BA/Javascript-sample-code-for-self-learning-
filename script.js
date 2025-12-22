@@ -35,7 +35,7 @@ function myValidation(){
         txt.innerHTML="input " +err;
     }
    finally{
-    document.getElementById('entry').value=" "
+    document.getElementById('entry').value=" "// output:can't be empty it must be filled
    }
 }
 var car={
@@ -47,7 +47,8 @@ var car={
     }
 };
 document.getElementById('demo').innerHTML=car.specs();
-
+//output:VanGuard  Black
+// using call method to borrow a method from another object
 var person1={
     character:function(){
         return this.gender + " with "+this.age;
@@ -64,4 +65,5 @@ const car={
     color:"white"
 };
 console.log(car);
+//output:{type: "Ford", model: 500, color: "white"}
                          
