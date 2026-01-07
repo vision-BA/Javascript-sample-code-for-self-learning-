@@ -1,2 +1,8 @@
-const car={carName:"BMW",carColor:"White",carNumber:500};
-console.log(car.carName);
+// Use modern naming and consistent keys
+const car = {
+  name: "BMW",
+  color: "White",
+  number: 500
+};
+
+console.log(car.name);
