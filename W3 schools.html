@@ -1,51 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <style>
-  *{
-    border-box:box-sizing;
-    margin: 0;
-  }
-    body{
-      background-color: green;
-      color: white;
-    }
-    nav{
-      background-color: purple;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      display: none;
-    }
-    nav ul li{
-      list-style-type:none;
-      padding: 12px;
-       }
-    nav ul li a{
-      text-decoration: none;
-      color: white;
-        }
-        #bar{
-          float: right;
-          margin: 12px;
-        }
-  </style>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>JavaScript try/catch example</title>
+</head>
 <body>
-<h4>This is hidden bar in navigation</h4>  
-<button id="bar" onclick="myFunction()">🌅</button>
-<nav id="nav">
-<ul>
-<li><a href="#">home</a></li>
-<li><a href="#">services</a></li>
-<li><a href="#">contacts</a></li>
-<li><a href="#">events</a></li>
-<li><a href="#">About</a></li>
-</ul>
-</nav>
+  <h2>JavaScript try/catch</h2>
+  <p>Please input a number between 5 and 10:</p>
+
+  <input id="demo" type="text" />
+  <button id="testBtn" type="button">Test input</button>
+  <p id="p01" aria-live="polite"></p>
+
   <script>
-    function myFunction(){
-      document.getElementById('nav').style.display="block";
-    }
-    
+    // attach event listener instead of inline onclick
+    const message = document.getElementById('p01');
+    const input = document.getElementById('demo');
+    document.getElementById('testBtn').addEventListener('click', () => {
+      message.textContent = '';
+      const raw = input.value.trim();
+      try {
+        if (raw === '') throw new Error('empty');
+        const x = Number(raw);
+        if (!Number.isFinite(x)) throw new Error('not a number');
+        if (x < 5) throw new Error('too low');
+        if (x > 10) throw new Error('too high');
+
+        message.textContent = 'Input is OK';
+      } catch (err) {
+        // use error.message if Error object; otherwise print the value
+        message.textContent = `Input is ${err.message || err}`;
+      } finally {
+        // reset to empty string (better UX than 0)
+        input.value = '';
+      }
+    });
   </script>
 </body>
-<html>
+</html>

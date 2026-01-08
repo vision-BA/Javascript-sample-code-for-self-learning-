@@ -1,9 +1,10 @@
-const car={
-  carName:"BMW",
-  carColor:"White",
-  carNumber:500,
-  fullSpecs:function(){
-    return this.carName +" "+this.carColor +" "+this.carNumber;
+const car = {
+  name: "BMW",
+  color: "White",
+  number: 500,
+  fullSpecs() {
+    return `${this.name} ${this.color} ${this.number}`;
   }
 };
+
 console.log(car.fullSpecs());
