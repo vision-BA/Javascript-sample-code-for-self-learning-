@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    input[type=text],button[type=submit]{
+        width: 500px;
+        height: fit-content;
+        padding: 12px;   
+        margin: 12px;
+    }
+    
+</style>
+<body>
+    <div class="form1">
+         <label for="username">Username:</label><br>
+  <input type="text" name="username" id="username"> <br>
+  <label for="password">password</label><br>
+  <input type="text" name="password" id="password"><br>
+  <button type="submit">login
+  </button>
+  <p id="capsLockAlert"></p>
+  </div>
+<script>
+    const capsAlert = document.getElementById("capsLockAlert");
+    // hide alert initially
+    capsAlert.style.display = 'none';
+
+    document.addEventListener('keyup', function(event) {
+        const capsOn = event.getModifierState && event.getModifierState('CapsLock');
+        if (capsOn) {
+            capsAlert.textContent = 'WARNING: Caps Lock is ON!';
+            capsAlert.style.display = 'block';
+        } else {
+            capsAlert.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
