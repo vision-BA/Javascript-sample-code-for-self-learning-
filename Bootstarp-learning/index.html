@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My First Bootstrap Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Wrap your columns inside a .container > .row; corrected column order for responsive breakpoints -->
+<div class="container-fluid my-3">
+  <h1 class="text-center">Team Members</h1>
+  <p class="text-center">Meet the talented individuals behind our projects.</p>
+
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-info text-dark py-3 mb-4">
+      <h3>Bright M. Nyerere</h3>
+      <p><strong>Location:</strong> Njombe Region</p>
+      <p><strong>Role:</strong> Front‑end Developer</p>
+      <p><strong>Email:</strong> bright.nyerere@example.com</p>
+      <p><small>Bright is learning modern web layout techniques and enjoys building responsive UI components using Bootstrap.</small></p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-secondary text-info py-3 mb-4">
+      <h3>Janeth A. Komba</h3>
+      <p><strong>Location:</strong> Dar‑es‑Salaam</p>
+      <p><strong>Role:</strong> UI/UX Designer</p>
+      <p><strong>Phone:</strong> +255 712 345 678</p>
+      <p><small>Janeth focuses on accessible, user-centered designs and prototypes with Bootstrap utilities for faster iteration.</small></p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary text-white py-3 mb-4">
+      <h3>Samuel O. Mwinyi</h3>
+      <p><strong>Location:</strong> Arusha</p>
+      <p><strong>Role:</strong> Full‑stack JavaScript Engineer</p>
+      <p><strong>Website:</strong> https://samuelmwinyi.dev</p>
+      <p><small>Samuel builds REST APIs and integrates front-end apps with Node.js backends; enjoys mentoring junior devs.</small></p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger text-muted py-3 mb-4">
+      <h3>Joel R. Mbwana</h3>
+      <p><strong>Location:</strong> Dodoma</p>
+      <p><strong>Role:</strong> QA Engineer</p>
+      <p><strong>Focus:</strong> Automated testing, CI integration</p>
+      <p><small>Joel ensures product quality by writing automated test suites and improving test coverage across projects.</small></p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
