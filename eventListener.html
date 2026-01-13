@@ -27,11 +27,13 @@
   <p id="capsLockAlert"></p>
   </div>
 <script>
+
     const capsAlert = document.getElementById("capsLockAlert");
     // hide alert initially
     capsAlert.style.display = 'none';
 
     document.addEventListener('keyup', function(event) {
+        // MODIFIER STATE METHOD TO CHECK IF CAPS LOCK IS ON
         const capsOn = event.getModifierState && event.getModifierState('CapsLock');
         if (capsOn) {
             capsAlert.textContent = 'WARNING: Caps Lock is ON!';
