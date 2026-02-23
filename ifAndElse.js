@@ -14,3 +14,4 @@ console.log(myStar("bright"));
 console.log(myStar("dainess"));
 //output darkness is near
 console.log(myStar("fatuma"));
+console.log(myStar("fathia"));
