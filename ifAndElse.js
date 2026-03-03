@@ -8,7 +8,7 @@ function myStar(val) {
  else if (val.includes("f")){
     return "fortune is coming your way";
  }
-}
+
 console.log(myStar("bright"));
 //output bright future ahead you
 console.log(myStar("dainess"));
